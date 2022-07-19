@@ -1,15 +1,18 @@
 // eslint-disable-next-line react-hooks/exhaustive-deps
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-
+import { Switch, Route } from 'react-router-dom';
+import Navs from './components/Navs';
+import Home from './components/pages/Home';
+import Starred from './components/pages/Starred';
 function App() {
   return (
-    <div>
-      <Routes>
-        <Route exact path="/" element={<Home />}></Route>
-      </Routes>
-    </div>
+    <Switch>
+      <Route exact path="/" component={Home} />
+      <Route exact path="/starred" component={Starred} />
+      <Route>
+        <div>404 Not Found</div>
+      </Route>
+    </Switch>
   );
 }
 
