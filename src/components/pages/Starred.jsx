@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import React, { useState, useEffect } from 'react';
 import MainPageLayout from '../MainPageLayout';
 import { useShows } from '../../misc/custom-hooks';

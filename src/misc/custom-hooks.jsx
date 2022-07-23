@@ -1,5 +1,7 @@
+/* eslint-disable */
 import { useReducer, useEffect, useState } from 'react';
-import apiGet from '../misc/config';
+import apiGet from './config';
+
 function showsReducer(prevState, action) {
   switch (action.type) {
     case 'ADD': {
