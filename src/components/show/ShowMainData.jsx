@@ -3,7 +3,7 @@ import IMG_PLACEHOLDER from '../images/not-found.png';
 import { Star } from '../styled';
 import { TagList, Headline, MainDataWrapper } from './ShowMainData.styled';
 
-const ShowMainData = ({ name, rating, summary, tags, image }) => {
+function ShowMainData({ name, rating, summary, tags, image }) {
   return (
     <MainDataWrapper>
       <img src={image ? image.original : IMG_PLACEHOLDER} alt="show-cover" />
@@ -31,5 +31,5 @@ const ShowMainData = ({ name, rating, summary, tags, image }) => {
       </div>
     </MainDataWrapper>
   );
-};
+}
 export default ShowMainData;

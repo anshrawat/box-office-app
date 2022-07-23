@@ -8,7 +8,7 @@ import Cast from '../show/Cast';
 import { ShowPageWrapper, InfoBlock } from './Show.styled';
 import { useShow } from '../../misc/custom-hooks';
 
-const Show = () => {
+function Show() {
   const { id } = useParams();
   const { show, isLoading, error } = useShow(id);
 
@@ -50,6 +50,6 @@ const Show = () => {
       </InfoBlock>
     </ShowPageWrapper>
   );
-};
+}
 
 export default Show;
